@@ -38,23 +38,21 @@ const studenti = [
     }
 ];
 
-console.log(studenti)
+console.log(studenti);
 
-const listaNomiUpperCase = studenti.map(element => {return element.Nome.toUpperCase()})
-console.log(listaNomiUpperCase)
+const listaNomiUpperCase = studenti.map(element => {return element.Nome.toUpperCase()});
+console.log(listaNomiUpperCase);
 
 const studentiVoto70 = studenti.filter((element) => {
     if (element.Grades > 70){
         return element
     }
-})
-
-console.log(studentiVoto70)
+});
+console.log(studentiVoto70);
 
 const studentiVoto70Id120 = studenti.filter((element) => {
     if (element.Grades > 70 && element.Id > 120){
         return element
     }
 })
-
-console.log(studentiVoto70Id120)
+console.log(studentiVoto70Id120);
