@@ -40,17 +40,17 @@ const studenti = [
 
 console.log(studenti);
 
-const listaNomiUpperCase = studenti.map(element => {return element.Nome.toUpperCase()});
+const listaNomiUpperCase = studenti.map(element => element.Nome.toUpperCase());
 console.log(listaNomiUpperCase);
 
-const studentiVoto70 = studenti.filter((element) => {
+const studentiVoto70 = studenti.filter(element => {
     if (element.Grades > 70){
         return element
     }
 });
 console.log(studentiVoto70);
 
-const studentiVoto70Id120 = studenti.filter((element) => {
+const studentiVoto70Id120 = studenti.filter(element => {
     if (element.Grades > 70 && element.Id > 120){
         return element
     }
