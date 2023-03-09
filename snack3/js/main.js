@@ -1,5 +1,5 @@
 'use strict';
-
+// lista bici
 const bici = [
     {
         Nome: 'Rovere',
@@ -32,7 +32,7 @@ const bici = [
 ];
 
 console.log(bici)
-
+// filter per trovare la bici piu leggera
 const biciLeggera = bici.filter(element => {
     const pesoBiciLeggera = Math.min(...bici.map(element => {
         return element.peso
@@ -43,10 +43,15 @@ const biciLeggera = bici.filter(element => {
 })
 
 console.log(biciLeggera)
-
+//destrutturazione
 const [{Nome, peso}] = biciLeggera
 
 console.log(Nome)
 console.log(peso)
 
 console.log(`la bici piu leggera è ${Nome} e pesa ${peso}kg`)
+// stampo la destrutturazione
+const container = document.querySelector('.container')
+const div = document.createElement('div')
+div.innerText = `la bici piu leggera è ${Nome} e pesa ${peso}kg`
+container.append(div)
