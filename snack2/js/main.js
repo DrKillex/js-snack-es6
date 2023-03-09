@@ -45,14 +45,14 @@ console.log(listaNomiUpperCase);
 
 const studentiVoto70 = studenti.filter(element => {
     if (element.Grades > 70){
-        return element
+        return true
     }
 });
 console.log(studentiVoto70);
 
 const studentiVoto70Id120 = studenti.filter(element => {
     if (element.Grades > 70 && element.Id > 120){
-        return element
+        return true
     }
 })
 console.log(studentiVoto70Id120);
