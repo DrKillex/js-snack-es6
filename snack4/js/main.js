@@ -53,17 +53,17 @@ console.log(squadreAggionate);
 //     }})
 
 const squadreBastonate = squadreAggionate.map(element => {
-    const fusione = squadreAggionate.forEach(element => {
-        const {nome, falliSubiti} = element
-
-
-        return {nome, falliSubiti}   
-    }        
-    )
-    console.log(fusione)
-
-    return fusione
-}
+    const {nome, falliSubiti} = element
+    return {nome, falliSubiti}   
+}        
 )
 
 console.log(squadreBastonate)
+
+const container = document.querySelector('.container')
+
+squadreBastonate.forEach(element => {
+    const div = document.createElement('div')
+    div.innerText = `la squadra ${element.nome} ha subito ${element.falliSubiti} falli`
+    container.append(div)
+})
